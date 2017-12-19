@@ -190,9 +190,7 @@ decltype((a)) h = g; // `decltype((a))` is int&
 ```
 ```c++
 template <typename X, typename Y>
-auto add(X x, Y y) -> decltype(x + y) {
-  return x + y;
-}
+auto add(X x, Y y) -> decltype(x + y) { return x + y; }
 add(1, 2.0); // `decltype(x + y)` => `decltype(3.0)` => `double`
 ```
 
