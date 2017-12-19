@@ -127,8 +127,8 @@ auto o; // error -- `o` requires initializer
 
 Extremely useful for readability, especially for complicated types:
 ```c++
-std::vector<int> v = ...;
-std::vector<int>::const_iterator cit = v.cbegin();
+std::vector<std::complex<float>> v = ...;
+std::vector<std::complex<float>>::const_iterator cit = v.cbegin();
 // vs.
 auto cit = v.cbegin();
 ```
